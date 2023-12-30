@@ -7,7 +7,7 @@ public class NumberGame {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        System.out.println("Welcome to the Guess the Number game!");
+        System.out.println("Welcome to the Guess the Number game 🎮");
 
         while (true) {
             // Step 1: Generate a random number within the specified range
@@ -21,7 +21,7 @@ public class NumberGame {
             while (true) {
                 // Step 5: Limit the number of attempts
                 if (attempts == 0) {
-                    System.out.println("\nRound " + (roundsWon + 1) + ": Try to guess the number between 1 and 100.");
+                    System.out.println("\nRound " + (roundsWon + 1) + ": Try to guess the number between 1 and 100. 🎯");
                 } else {
                     System.out.println("\nAttempts left: " + (10 - attempts + 1));
                 }
@@ -32,13 +32,13 @@ public class NumberGame {
 
                 // Step 3: Compare the user's guess and provide feedback
                 if (userGuess == secretNumber) {
-                    System.out.println("Congratulations! You guessed the correct number " + secretNumber + "!");
+                    System.out.println("Congratulations! You guessed the correct number " + secretNumber + "! 🥳🥳🥳");
                     roundsWon++;
                     break;
                 } else if (userGuess < secretNumber) {
-                    System.out.println("Too low! Try again.");
+                    System.out.println("Too low! Try again 👇");
                 } else {
-                    System.out.println("Too high! Try again.");
+                    System.out.println("Too high! Try again 👆");
                 }
 
                 // Increment the attempts
@@ -58,7 +58,7 @@ public class NumberGame {
             System.out.print("Do you want to play again? (yes/no): ");
             String playAgain = scanner.next().toLowerCase();
             if (!playAgain.equals("yes")) {
-                System.out.println("Thanks for playing! Goodbye.");
+                System.out.println("Thanks for playing! Goodbye 👋");
                 break;
             }
         }

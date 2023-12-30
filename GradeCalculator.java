@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class GradeCalculator {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -35,15 +36,15 @@ public class GradeCalculator {
 
     private static String calculateGrade(double averagePercentage) {
         if (averagePercentage >= 90 && averagePercentage <= 100) {
-            return "A OUTSTANDING RESULTS";
+            return "A OUTSTANDING RESULTS! \uD83D\uDCAF";
         } else if (averagePercentage >= 80 && averagePercentage < 90) {
-            return "B VERY GOOD PASSED";
+            return "B VERY GOOD, PASSED! \uD83D\uDD25";
         } else if (averagePercentage >= 70 && averagePercentage < 80) {
-            return "C ";
+            return "C PASSED! \uD83E\uDD73";
         } else if (averagePercentage >= 60 && averagePercentage < 70) {
-            return "D ";
+            return "D PASSED BY CHANCE, WORK HARDER NEXT TIME! \uD83E\uDD2D";
         } else {
-            return "F OOPS,FAILED";
+            return "F OOPS, FAILED! \uD83D\uDEA9";
         }
     }
 }
